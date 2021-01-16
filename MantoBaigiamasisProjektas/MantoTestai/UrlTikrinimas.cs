@@ -5,28 +5,27 @@ using System.Threading;
 
 namespace MantoBaigiamasisProjektas.MantoTestai
 {
-    class KalbosKeitimoTikrinimas: MantoBazine
+    class UrlTikrinimas : MantoBazine
 
     {
-        private KalbosPuslapis kalbosPuslapis;
+        private NotaruRumaiPuslapis notaruRumaiPuslapis;
 
         [SetUp]
         public void PriesTesta()
         {
-            kalbosPuslapis = new KalbosPuslapis(driver);
+            notaruRumaiPuslapis = new NotaruRumaiPuslapis(driver);
         }
         [Test]
-        public void PakeiskKalbaIAnglu()
+        public void ArTikraiTamePuslapyjeEsi()
 
         {
-            kalbosPuslapis.IsjunkSlapukus();
+            notaruRumaiPuslapis.IsjunkSlapukus();
             Thread.Sleep(2000);
-            kalbosPuslapis.IsskleiskKalbas();
+            notaruRumaiPuslapis.IsskleiskNaujienas();
             Thread.Sleep(2000);
-            kalbosPuslapis.PasirinkKalba();
+            notaruRumaiPuslapis.PalyginkURL();
             Thread.Sleep(2000);
-            kalbosPuslapis.PalyginkArPasiketeKalba();
-            Thread.Sleep(2000);
+            
         }
     }
 }

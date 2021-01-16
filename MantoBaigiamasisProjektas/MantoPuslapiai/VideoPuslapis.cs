@@ -1,5 +1,7 @@
 ﻿using OpenQA.Selenium;
 using NUnit.Framework;
+using OpenQA.Selenium.Support.UI;
+using System;
 
 namespace AutoPaskaitos.MantoBaigiamasisProjektas.MantoPuslapiai
 {
@@ -33,5 +35,6 @@ namespace AutoPaskaitos.MantoBaigiamasisProjektas.MantoPuslapiai
         {
             isjunkVideo.Click();
         }
+        
     }
 }

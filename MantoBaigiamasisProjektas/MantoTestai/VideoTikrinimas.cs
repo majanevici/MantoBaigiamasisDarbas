@@ -27,8 +27,9 @@ namespace MantoBaigiamasisProjektas.MantoTestai
             videoPuslapis.PasirinkVideo();
             Thread.Sleep(10000);
             videoPuslapis.PajudinkPeleKadAtsirastuX();
-            Thread.Sleep(2000);
-            videoPuslapis.UzdarykVideo();
+            Thread.Sleep(1000);
+            PalaukKolAtsirasElementasIrUzdarykJi();
+            //videoPuslapis.UzdarykVideo();
             Thread.Sleep(2000);
         }
     }
