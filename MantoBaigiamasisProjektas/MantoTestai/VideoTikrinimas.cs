@@ -12,7 +12,7 @@ namespace MantoBaigiamasisProjektas.MantoTestai
         private VideoPuslapis videoPuslapis;
 
         [SetUp]
-        public void PaleiskVideo()
+        public void PriesTesta()
         {
             videoPuslapis = new VideoPuslapis(driver);
         }
@@ -20,14 +20,16 @@ namespace MantoBaigiamasisProjektas.MantoTestai
         public void ArVideoVeikia()
 
         {
+            videoPuslapis.IsjunkSlapukus();
+            Thread.Sleep(2000);
             videoPuslapis.PaspauskVideoMedziaga();
             Thread.Sleep(2000);
             videoPuslapis.PasirinkVideo();
             Thread.Sleep(10000);
-            ((IJavaScriptExecutor)driver).ExecuteScript("window.scrollTo(0, document.body.scrollHeight - 100)");
-            Thread.Sleep(1000);
+            videoPuslapis.PajudinkPeleKadAtsirastuX();
+            Thread.Sleep(2000);
             videoPuslapis.UzdarykVideo();
-            Thread.Sleep(5000);
+            Thread.Sleep(2000);
         }
     }
 }

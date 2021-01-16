@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "b+HjRbWwhU+qOTx04wl/Bqp+XRKsnbwocge1L0Wm/x4CNeTUA4rgmIG9jOE+GPza9dzBuK4M7uTBXVuuCR+qrg==",
+  "dgSpecHash": "/FwNpzp8G0ZQCh3p7jdITs4iGXHu3paWsa3Tzg4CHDlyPIVtMeJhOZ3qq1uKdEdB7+q85kqLSoS7BK3jFWmKhw==",
   "success": true,
   "projectFilePath": "/Users/mantas-macbookair/Projects/AutoPaskaitos/MantoBaigiamasisProjektas/MantoBaigiamasisProjektas.csproj",
   "expectedPackageFiles": [
@@ -23,6 +23,7 @@
     "/Users/mantas-macbookair/.nuget/packages/selenium.support/3.141.0/selenium.support.3.141.0.nupkg.sha512",
     "/Users/mantas-macbookair/.nuget/packages/selenium.webdriver/3.141.0/selenium.webdriver.3.141.0.nupkg.sha512",
     "/Users/mantas-macbookair/.nuget/packages/selenium.webdriver.chromedriver/87.0.4280.8800/selenium.webdriver.chromedriver.87.0.4280.8800.nupkg.sha512",
+    "/Users/mantas-macbookair/.nuget/packages/selenium.webdriver.geckodriver/0.29.0/selenium.webdriver.geckodriver.0.29.0.nupkg.sha512",
     "/Users/mantas-macbookair/.nuget/packages/system.appcontext/4.1.0/system.appcontext.4.1.0.nupkg.sha512",
     "/Users/mantas-macbookair/.nuget/packages/system.collections/4.3.0/system.collections.4.3.0.nupkg.sha512",
     "/Users/mantas-macbookair/.nuget/packages/system.collections.nongeneric/4.3.0/system.collections.nongeneric.4.3.0.nupkg.sha512",

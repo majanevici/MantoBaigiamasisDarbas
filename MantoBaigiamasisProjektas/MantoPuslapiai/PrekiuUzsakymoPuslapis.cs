@@ -24,7 +24,6 @@ namespace AutoPaskaitos.MantoBaigiamasisProjektas.MantoPuslapiai
         private IWebElement paspauskMygtukaUzdaryti => driver.FindElement(By.CssSelector("#orderModal > div > div > div.modal-footer > button.btn.btn-secondary"));
         private IWebElement paspauskMygtukaOK => driver.FindElement(By.CssSelector("body > div.sweet-alert.showSweetAlert.visible > div.sa-button-container > div > button"));
     
-
         public void PaspauskKategorijosMygtuka()
         {
             paspauskMygtukaKategorijos.Click();
@@ -85,17 +84,9 @@ namespace AutoPaskaitos.MantoBaigiamasisProjektas.MantoPuslapiai
         {
             paspauskMygtukaOK.Click();
         }
-      
-        
-
-
-
-
-
-
-
+        public void PalyginkArSekmingaiUzsakytaPreke()
+        {
+            Assert.AreEqual("Thank you for your purchase!", driver.FindElement(By.CssSelector("h2:nth-child(6)")).Text);
+        }
     }
-
-
-
 }

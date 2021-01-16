@@ -11,17 +11,17 @@ namespace MantoBaigiamasisProjektas.MantoTestai
         private NotaroBuveinesPuslapis notaroBuveinesPuslapis;
 
         [SetUp]
-        public void NotaroBuveine()
+        public void PriesTesta()
         {
             notaroBuveinesPuslapis = new NotaroBuveinesPuslapis(driver);
         }
         [Test]
-        public void SuraskNotaroBiura()
+        public void SuraskNotaroBiuraGoogle()
 
         {
             notaroBuveinesPuslapis.IsjunkSlapukus();
             Thread.Sleep(2000);
-            notaroBuveinesPuslapis.PaieskosLaukas();
+            notaroBuveinesPuslapis.PaspauskPaieskosLaukas();
             Thread.Sleep(2000);
             notaroBuveinesPuslapis.IveskNotara();
             Thread.Sleep(2000);
@@ -29,7 +29,7 @@ namespace MantoBaigiamasisProjektas.MantoTestai
             Thread.Sleep(2000);
             notaroBuveinesPuslapis.PaspauskAntNotaro();
             Thread.Sleep(2000);
-            notaroBuveinesPuslapis.Biuras();
+            notaroBuveinesPuslapis.PalyginkArTasBiuras();
             Thread.Sleep(2000);
             notaroBuveinesPuslapis.SuraskBiuraGoogle();
             Thread.Sleep(2000);

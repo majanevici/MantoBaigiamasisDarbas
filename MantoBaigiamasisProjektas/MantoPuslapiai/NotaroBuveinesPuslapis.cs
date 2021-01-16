@@ -20,7 +20,7 @@ namespace AutoPaskaitos.MantoBaigiamasisProjektas.MantoPuslapiai
         {
             slapukai.Click();
         }
-        public void PaieskosLaukas()
+        public void PaspauskPaieskosLaukas()
         {
             paspauskAntIvedimoLauko.Click();
         }
@@ -36,10 +36,9 @@ namespace AutoPaskaitos.MantoBaigiamasisProjektas.MantoPuslapiai
         {
             surastoNotaroMygtukas.Click();
         }
-        public void Biuras()
+        public void PalyginkArTasBiuras()
         {
             Assert.AreEqual("Vilniaus miesto 26-asis notarų biuras", biuroLaukelis.Text);
-
         }
         public void SuraskBiuraGoogle()
         {

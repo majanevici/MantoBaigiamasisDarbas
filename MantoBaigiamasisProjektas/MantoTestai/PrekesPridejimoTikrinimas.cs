@@ -19,20 +19,19 @@ namespace MantoBaigiamasisProjektas.MantoTestai
         public void PridekPreke()
         {
             prekiuPuslapis.PaspauskKategorijosMygtuka();
-            Thread.Sleep(3000);
+            Thread.Sleep(2000);
             prekiuPuslapis.PaspauskTelefonaiMygtuka();
-            Thread.Sleep(3000);
+            Thread.Sleep(2000);
             prekiuPuslapis.PaspauskIphone6();
-            Thread.Sleep(3000);
+            Thread.Sleep(2000);
             prekiuPuslapis.PridekTelefonaIkrepseli();
-            Thread.Sleep(3000);
-            //prekiuPuslapis.PaspauskPranesimeClose();
+            Thread.Sleep(2000);
             driver.SwitchTo().Alert().Accept();
-            Thread.Sleep(3000);
+            Thread.Sleep(2000);
             prekiuPuslapis.PaspauskKrepselis();
-            Thread.Sleep(3000);
+            Thread.Sleep(2000);
             prekiuPuslapis.PaspauskMygtukaIstrinti();
-            Thread.Sleep(3000);
+            Thread.Sleep(2000);
         }
     }
 }

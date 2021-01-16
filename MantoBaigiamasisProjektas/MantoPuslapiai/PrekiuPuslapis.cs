@@ -39,13 +39,5 @@ namespace AutoPaskaitos.MantoBaigiamasisProjektas.MantoPuslapiai
         {
             paspauskMygtukaIstrinti.Click();
         }
-
-
-
-
-
     }
-
-
-
 }

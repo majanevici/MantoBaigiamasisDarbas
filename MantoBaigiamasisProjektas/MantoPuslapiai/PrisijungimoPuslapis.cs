@@ -13,6 +13,7 @@ namespace AutoPaskaitos.MantoBaigiamasisProjektas.MantoPuslapiai
         private IWebElement iveskPasswordLaukas => driver.FindElement(By.Id("loginpassword"));
         private IWebElement paspauskLogInMygtukas => driver.FindElement(By.CssSelector("#logInModal > div > div > div.modal-footer > button.btn.btn-primary"));
         private IWebElement paspauskLogOutMygtukas => driver.FindElement(By.Id("logout2"));
+        private IWebElement vartotojoPavadinimoIcona => driver.FindElement(By.Id("nameofuser"));
 
         public void PaspauskPirmaLogIn()
         {
@@ -30,10 +31,13 @@ namespace AutoPaskaitos.MantoBaigiamasisProjektas.MantoPuslapiai
         {
             paspauskLogInMygtukas.Click();
         }
+        public void PatikrinkArTasVartotojas()
+        {
+            Assert.AreEqual("Welcome majanevici@gmail.com", vartotojoPavadinimoIcona.Text);
+        }
         public void SekmingasAtsijungimas()
         {
             paspauskLogOutMygtukas.Click();
-
         }
         public void IveskBlogaUsername()
         {
@@ -43,6 +47,5 @@ namespace AutoPaskaitos.MantoBaigiamasisProjektas.MantoPuslapiai
         {
             iveskPasswordLaukas.SendKeys("12345");
         }
-
     }
 }

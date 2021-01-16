@@ -17,37 +17,30 @@ namespace MantoBaigiamasisProjektas.MantoTestai
         }
 
         [Test]
-        public void NeprisijunkPrieTinklapio()
+        public void NesekmingasPrisijungimasPrieTinklapio()
         {
             prisijungimoPuslapis.PaspauskPirmaLogIn();
-            Thread.Sleep(5000);
+            Thread.Sleep(2000);
             prisijungimoPuslapis.IveskBlogaUsername();
             prisijungimoPuslapis.IveskBlogaPassword();
-            
             prisijungimoPuslapis.PaspauskLogInMygtuka();
-            Thread.Sleep(1000);
+            Thread.Sleep(2000);
             driver.SwitchTo().Alert().Accept();
-
-            Thread.Sleep(4000);
+            Thread.Sleep(3000);
         }
-
         [Test]
-        public void PrisijunkPrieTinklapio()
+        public void PrisijunkPrieTinklapioIrAtsijunk()
         {
             prisijungimoPuslapis.PaspauskPirmaLogIn();
-            Thread.Sleep(5000);
+            Thread.Sleep(2000);
             prisijungimoPuslapis.IveskUsername();
             prisijungimoPuslapis.IveskPassword();
             prisijungimoPuslapis.PaspauskLogInMygtuka();
-            Thread.Sleep(3000);
+            Thread.Sleep(2000);
+            prisijungimoPuslapis.PatikrinkArTasVartotojas();
+            Thread.Sleep(2000);
             prisijungimoPuslapis.SekmingasAtsijungimas();
-
-            Thread.Sleep(4000);
+            Thread.Sleep(2000);
         }
-      
-
-
     }
-
-    
 }
