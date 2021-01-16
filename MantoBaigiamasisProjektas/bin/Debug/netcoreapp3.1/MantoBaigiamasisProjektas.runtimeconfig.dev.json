@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/Users/mantas-macbookair/.dotnet/store/|arch|/|tfm|",
+      "/Users/mantas-macbookair/.nuget/packages"
+    ]
+  }
+}
