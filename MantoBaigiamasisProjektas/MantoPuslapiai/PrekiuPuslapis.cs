@@ -8,36 +8,36 @@ namespace AutoPaskaitos.MantoBaigiamasisProjektas.MantoPuslapiai
     {
         public PrekiuPuslapis(IWebDriver driver) : base(driver) { }
 
-        private IWebElement paspauskMygtukaKategorijos => driver.FindElement(By.Id("cat"));
-        private IWebElement paspauskMygtukaPhones => driver.FindElement(By.LinkText("Phones"));
-        private IWebElement paspauskMygtukaIphone632gb => driver.FindElement(By.CssSelector("#tbodyid > div:nth-child(1) > div > div > h4 > a"));
-        private IWebElement paspauskMygtukaAdd => driver.FindElement(By.LinkText("Add to cart"));
-        private IWebElement paspauskMygtukaCart => driver.FindElement(By.CssSelector("#navbarExample > ul > li:nth-child(4) > a"));
-        private IWebElement paspauskMygtukaIstrinti => driver.FindElement(By.LinkText("Delete"));
+        private IWebElement mygtukasKategorijos => driver.FindElement(By.Id("cat"));
+        private IWebElement mygtukasPhones => driver.FindElement(By.LinkText("Phones"));
+        private IWebElement mygtukasIphone632gb => driver.FindElement(By.CssSelector("#tbodyid > div:nth-child(1) > div > div > h4 > a"));
+        private IWebElement mygtukasAdd => driver.FindElement(By.LinkText("Add to cart"));
+        private IWebElement mygtukasCart => driver.FindElement(By.CssSelector("#navbarExample > ul > li:nth-child(4) > a"));
+        private IWebElement mygtukasIstrinti => driver.FindElement(By.LinkText("Delete"));
 
         public void PaspauskKategorijosMygtuka()
         {
-            paspauskMygtukaKategorijos.Click();
+            mygtukasKategorijos.Click();
         }
         public void PaspauskTelefonaiMygtuka()
         {
-            paspauskMygtukaPhones.Click();
+            mygtukasPhones.Click();
         }
         public void PaspauskIphone6()
         {
-            paspauskMygtukaIphone632gb.Click();
+            mygtukasIphone632gb.Click();
         }
         public void PridekTelefonaIkrepseli()
         {
-            paspauskMygtukaAdd.Click();
+            mygtukasAdd.Click();
         }
         public void PaspauskKrepselis()
         {
-            paspauskMygtukaCart.Click();
+            mygtukasCart.Click();
         }
         public void PaspauskMygtukaIstrinti()
         {
-            paspauskMygtukaIstrinti.Click();
+            mygtukasIstrinti.Click();
         }
     }
 }

@@ -32,7 +32,7 @@ namespace MantoBaigiamasisProjektas.MantoTestai
             notaroBuveinesPuslapis.PalyginkArTasBiuras();
             Thread.Sleep(2000);
             notaroBuveinesPuslapis.SuraskBiuraGoogle();
-            Thread.Sleep(2000);
+            Thread.Sleep(3000);
         }
     }
 }

@@ -14,15 +14,15 @@ namespace AutoPaskaitos.MantoBaigiamasisProjektas.Testai
         [SetUp]
         public void priesTesta()
         {
-            PerKokiaNarsyklePaleisiTesta("chrome");
+            PerKokiaNarsyklePaleisiTesta("firefox");
             /*
              URL "https://www.demoblaze.com" naudojamas su siais testais:PrekesPridejimoTikrinimas,PrekesUzsakymoTikrinimas,
              PrisijungimoTikrinimas.
              URL "https://www.notarurumai.lt" naudojamas sus siais testais: KalbosKeitimoTikrinimas,NotaroBuveinesTikrinimas,
              UrlTikrinimas, VideoTikrinimas.
              */
-            driver.Url = "https://www.demoblaze.com";
-            //driver.Url = "https://www.notarurumai.lt";
+            //driver.Url = "https://www.demoblaze.com";
+            driver.Url = "https://www.notarurumai.lt";
             //driver.Manage().Window.Maximize();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(15);
         }

@@ -9,7 +9,7 @@ namespace AutoPaskaitos.MantoBaigiamasisProjektas.MantoPuslapiai
         public NotaruRumaiPuslapis(IWebDriver driver) : base(driver) { }
 
         private IWebElement slapukai => driver.FindElement(By.CssSelector("#mm-0 > div.cookie_container.ng-scope > div > div > div.cookies_checkboxes > button"));
-        private IWebElement paspauskNaujienos => driver.FindElement(By.CssSelector("#mm-0 > div.header_container > header > div > nav > ul > li:nth-child(1) > a"));
+        private IWebElement naujienosMygtukas => driver.FindElement(By.CssSelector("#mm-0 > div.header_container > header > div > nav > ul > li:nth-child(1) > a"));
         
         public void IsjunkSlapukus()
         {
@@ -17,7 +17,7 @@ namespace AutoPaskaitos.MantoBaigiamasisProjektas.MantoPuslapiai
         }
         public void IsskleiskNaujienas()
         {
-            paspauskNaujienos.Click();
+            naujienosMygtukas.Click();
         }
         public void PalyginkURL()
         {

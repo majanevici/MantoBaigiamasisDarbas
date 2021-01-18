@@ -8,28 +8,28 @@ namespace AutoPaskaitos.MantoBaigiamasisProjektas.MantoPuslapiai
     {
         public PrisijungimoPuslapis(IWebDriver driver) : base(driver) { }
 
-        private IWebElement paspauskMygtukaLogIn => driver.FindElement(By.Id("login2"));
-        private IWebElement iveskUsernameLaukas => driver.FindElement(By.Id("loginusername"));
-        private IWebElement iveskPasswordLaukas => driver.FindElement(By.Id("loginpassword"));
-        private IWebElement paspauskLogInMygtukas => driver.FindElement(By.CssSelector("#logInModal > div > div > div.modal-footer > button.btn.btn-primary"));
-        private IWebElement paspauskLogOutMygtukas => driver.FindElement(By.Id("logout2"));
+        private IWebElement mygtukasLogIn => driver.FindElement(By.Id("login2"));
+        private IWebElement usernameLaukas => driver.FindElement(By.Id("loginusername"));
+        private IWebElement passwordLaukas => driver.FindElement(By.Id("loginpassword"));
+        private IWebElement logInMygtukas => driver.FindElement(By.CssSelector("#logInModal > div > div > div.modal-footer > button.btn.btn-primary"));
+        private IWebElement logOutMygtukas => driver.FindElement(By.Id("logout2"));
         private IWebElement vartotojoPavadinimoIcona => driver.FindElement(By.Id("nameofuser"));
 
         public void PaspauskPirmaLogIn()
         {
-            paspauskMygtukaLogIn.Click();
+            mygtukasLogIn.Click();
         }
         public void IveskUsername()
         {
-            iveskUsernameLaukas.SendKeys("majanevici@gmail.com");
+            usernameLaukas.SendKeys("majanevici@gmail.com");
         }
         public void IveskPassword()
         {
-            iveskPasswordLaukas.SendKeys("Mantukas12345");
+            passwordLaukas.SendKeys("Mantukas12345");
         }
         public void PaspauskLogInMygtuka()
         {
-            paspauskLogInMygtukas.Click();
+            logInMygtukas.Click();
         }
         public void PatikrinkArTasVartotojas()
         {
@@ -37,15 +37,15 @@ namespace AutoPaskaitos.MantoBaigiamasisProjektas.MantoPuslapiai
         }
         public void SekmingasAtsijungimas()
         {
-            paspauskLogOutMygtukas.Click();
+            logOutMygtukas.Click();
         }
         public void IveskBlogaUsername()
         {
-            iveskUsernameLaukas.SendKeys("mantas");
+            usernameLaukas.SendKeys("mantas");
         }
         public void IveskBlogaPassword()
         {
-            iveskPasswordLaukas.SendKeys("12345");
+            passwordLaukas.SendKeys("12345");
         }
     }
 }

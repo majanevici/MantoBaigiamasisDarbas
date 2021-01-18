@@ -8,81 +8,81 @@ namespace AutoPaskaitos.MantoBaigiamasisProjektas.MantoPuslapiai
     {
         public PrekiuUzsakymoPuslapis(IWebDriver driver) : base(driver) { }
 
-        private IWebElement paspauskMygtukaKategorijos => driver.FindElement(By.Id("cat"));
-        private IWebElement paspauskMygtukaLaptops => driver.FindElement(By.LinkText("Laptops"));
-        private IWebElement paspauskMygtukaSonyVaio => driver.FindElement(By.CssSelector("#tbodyid > div:nth-child(1) > div > div > h4 > a"));
-        private IWebElement paspauskMygtukaAdd => driver.FindElement(By.LinkText("Add to cart"));
-        private IWebElement paspauskMygtukaCart => driver.FindElement(By.CssSelector("#navbarExample > ul > li:nth-child(4) > a"));
-        private IWebElement paspauskMygtukaOrder => driver.FindElement(By.CssSelector("#page-wrapper > div > div.col-lg-1 > button"));
-        private IWebElement iveskVarda => driver.FindElement(By.Id("name"));
-        private IWebElement iveskSali => driver.FindElement(By.Id("country"));
-        private IWebElement iveskMiesta => driver.FindElement(By.Id("city"));
-        private IWebElement iveskKreditinesKortelesNr => driver.FindElement(By.Id("card"));
-        private IWebElement iveskKreditinesKortelesGaliojimoMenesi => driver.FindElement(By.Id("month"));
-        private IWebElement iveskKreditinesKortelesGaliojimoMetus => driver.FindElement(By.Id("year"));
-        private IWebElement paspauskPatvirtinimoMygtuka => driver.FindElement(By.CssSelector("#orderModal > div > div > div.modal-footer > button.btn.btn-primary"));
-        private IWebElement paspauskMygtukaUzdaryti => driver.FindElement(By.CssSelector("#orderModal > div > div > div.modal-footer > button.btn.btn-secondary"));
-        private IWebElement paspauskMygtukaOK => driver.FindElement(By.CssSelector("body > div.sweet-alert.showSweetAlert.visible > div.sa-button-container > div > button"));
+        private IWebElement mygtukasKategorijos => driver.FindElement(By.Id("cat"));
+        private IWebElement mygtukasLaptops => driver.FindElement(By.LinkText("Laptops"));
+        private IWebElement mygtukasSonyVaio => driver.FindElement(By.CssSelector("#tbodyid > div:nth-child(1) > div > div > h4 > a"));
+        private IWebElement mygtukasAdd => driver.FindElement(By.LinkText("Add to cart"));
+        private IWebElement mygtukasCart => driver.FindElement(By.CssSelector("#navbarExample > ul > li:nth-child(4) > a"));
+        private IWebElement mygtukasOrder => driver.FindElement(By.CssSelector("#page-wrapper > div > div.col-lg-1 > button"));
+        private IWebElement vardas => driver.FindElement(By.Id("name"));
+        private IWebElement salis => driver.FindElement(By.Id("country"));
+        private IWebElement miestas => driver.FindElement(By.Id("city"));
+        private IWebElement kreditinesKortelesNr => driver.FindElement(By.Id("card"));
+        private IWebElement kreditinesKortelesGaliojimoMenesis => driver.FindElement(By.Id("month"));
+        private IWebElement kreditinesKortelesGaliojimoMetai => driver.FindElement(By.Id("year"));
+        private IWebElement patvirtinimoMygtukas => driver.FindElement(By.CssSelector("#orderModal > div > div > div.modal-footer > button.btn.btn-primary"));
+        private IWebElement mygtukasUzdaryti => driver.FindElement(By.CssSelector("#orderModal > div > div > div.modal-footer > button.btn.btn-secondary"));
+        private IWebElement mygtukasOK => driver.FindElement(By.CssSelector("body > div.sweet-alert.showSweetAlert.visible > div.sa-button-container > div > button"));
     
         public void PaspauskKategorijosMygtuka()
         {
-            paspauskMygtukaKategorijos.Click();
+            mygtukasKategorijos.Click();
         }
         public void PaspauskLaptopaiMygtuka()
         {
-            paspauskMygtukaLaptops.Click();
+            mygtukasLaptops.Click();
         }
         public void PaspauskSony()
         {
-            paspauskMygtukaSonyVaio.Click();
+            mygtukasSonyVaio.Click();
         }
         public void PridekKompaIkrepseli()
         {
-            paspauskMygtukaAdd.Click();
+            mygtukasAdd.Click();
         }
         public void PaspauskKrepselis()
         {
-            paspauskMygtukaCart.Click();
+            mygtukasCart.Click();
         }
         public void PaspauskUzsakyti()
         {
-            paspauskMygtukaOrder.Click();
+            mygtukasOrder.Click();
         }
         public void NurodykVarda()
         {
-            iveskVarda.SendKeys("Mantas");
+            vardas.SendKeys("Mantas");
         }
         public void NurodykSali()
         {
-            iveskSali.SendKeys("Lietuva");
+            salis.SendKeys("Lietuva");
         }
         public void NurodykMiesta()
         {
-            iveskMiesta.SendKeys("Vilnius");
+            miestas.SendKeys("Vilnius");
         }
         public void NurodykKredinesNr()
         {
-            iveskKreditinesKortelesNr.SendKeys("LT24263625365264562");
+            kreditinesKortelesNr.SendKeys("LT24263625365264562");
         }
         public void NurodykKredinesMenesi()
         {
-            iveskKreditinesKortelesGaliojimoMenesi.SendKeys("Sausis");
+            kreditinesKortelesGaliojimoMenesis.SendKeys("Sausis");
         }
         public void NurodykKredinesMetus()
         {
-            iveskKreditinesKortelesGaliojimoMetus.SendKeys("2024");
+            kreditinesKortelesGaliojimoMetai.SendKeys("2024");
         }
         public void GalutinisPatvirtinimas()
         {
-            paspauskPatvirtinimoMygtuka.Click();
+            patvirtinimoMygtukas.Click();
         }
         public void PaspauskCloseMygtuka()
         {
-            paspauskMygtukaUzdaryti.Click();
+            mygtukasUzdaryti.Click();
         }
         public void PaspauskOkMygtuka()
         {
-            paspauskMygtukaOK.Click();
+            mygtukasOK.Click();
         }
         public void PalyginkArSekmingaiUzsakytaPreke()
         {

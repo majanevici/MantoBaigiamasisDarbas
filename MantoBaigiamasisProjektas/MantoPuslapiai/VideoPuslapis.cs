@@ -13,7 +13,7 @@ namespace AutoPaskaitos.MantoBaigiamasisProjektas.MantoPuslapiai
         private IWebElement slapukai => driver.FindElement(By.CssSelector("#mm-0 > div.cookie_container.ng-scope > div > div > div.cookies_checkboxes > button"));
         private IWebElement videoMygtukas => driver.FindElement(By.CssSelector("#mm-0 > div.header_container > header > div > nav > ul > li:nth-child(4) > a"));
         private IWebElement videoBiblioteka=> driver.FindElement(By.CssSelector("#mm-0 > div.index_container.container-fluid.global_container > div > main > div > div.youtube_list > a:nth-child(1) > div > img"));
-        private IWebElement isjunkVideo => driver.FindElement(By.CssSelector(".fancybox-button--close path"));
+        private IWebElement videoIsjungimas => driver.FindElement(By.CssSelector(".fancybox-button--close path"));
 
         public void IsjunkSlapukus()
         {
@@ -33,7 +33,7 @@ namespace AutoPaskaitos.MantoBaigiamasisProjektas.MantoPuslapiai
         }
         public void UzdarykVideo()
         {
-            isjunkVideo.Click();
+            videoIsjungimas.Click();
         }
         
     }
